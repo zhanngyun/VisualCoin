@@ -25,7 +25,7 @@ suncloud:
             params: count=countSql
 spring:
   application:
-    name: iwin-tuc-web
+    name: sun-cloud-deploy
   datasource:
     username: sunCloud
     password: sunCloud
