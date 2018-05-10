@@ -1,6 +1,5 @@
 package sun.cloud.api.controller;
 
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,9 +16,6 @@ import sun.cloud.core.base.BaseController;
 import sun.cloud.core.base.ResponseModel;
 import sun.cloud.core.utils.JacksonUtils;
 
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
@@ -34,8 +30,10 @@ public class WeiXinController extends BaseController {
 
     private static final Logger logger = LoggerFactory.getLogger(WeiXinController.class);
 
-    @Value("{weixin.url}")
-    private String weixinUrl;
+    @Value("${weixin.openid}")
+    private String openid;
+    @Value("${weixin.secret}")
+    private String secret;
 
     /**
      * 用户信息认证
@@ -44,13 +42,14 @@ public class WeiXinController extends BaseController {
      */
     @RequestMapping(value = "/auth",method = RequestMethod.GET)
     public ResponseModel<UserInfo> getCode(@RequestParam("code") String code) {
-        String url = weixinUrl;
+        String url = "https://api.weixin.qq.com/sns/jscode2session?appid="+openid+"&secret="+secret+"&js_code="+code+"&grant_type=authorization_code";
         String responseMsg = restTemplate(url, null, String.class, HttpMethod.GET);
         System.out.println("获取token信息"+responseMsg);
         Map<String, Object> map = JacksonUtils.json2Map(responseMsg);
         System.out.println("用户的OpenId为："+map.get("openid")+"用户的sessionKey为："+map.get("session_key"));
         UserInfo userInfo = new UserInfo();
         userInfo.setOpenid((String)map.get("openid"));
+        logger.info("【用户信息认证】成功");
         return success(userInfo);
 
     }
