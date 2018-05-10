@@ -99,5 +99,5 @@ system:
 #微信接口
 weixin:
   #通过code获取用户的openid
-  openid: wx4dda544bc4e0c910
-  secret: 4fec7afdaf39a8e8ff29de1eecdeffcc
+  openid: ####
+  secret: ####
