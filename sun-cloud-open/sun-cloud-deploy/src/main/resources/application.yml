@@ -95,3 +95,8 @@ system:
     exception-message: "未找到字典项"
     ######未找的字典项时返回的默认信息#######
     not-fund-message: "未知"
+
+#微信接口
+weixin:
+  #通过code获取用户的openid
+  url: https://api.weixin.qq.com/sns/jscode2session?appid=wx4dda544bc4e0c910&secret=4fec7afdaf39a8e8ff29de1eecdeffcc&js_code="+code+"&grant_type=authorization_code
