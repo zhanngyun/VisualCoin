@@ -1,0 +1,59 @@
+<!--游戏页面  -->
+<view class='container'>
+  <view class='game'>
+      <view class='game-content'>
+        <!-- 鼠 -->
+          <view class='img {{shu}}' bindtap='selected' id='shu' >
+            <image src='https://suncloud.club/shu.png' style='width:68px;height:68px;'/>
+          </view>
+          <!-- 牛 -->
+          <view class='img {{niu}}' bindtap='selected' id='niu'>
+            <image src='https://suncloud.club/niu.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--虎  -->
+          <view class='img {{hu}}' bindtap='selected' id='hu'>
+            <image src='https://suncloud.club/hu.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--兔  -->
+          <view class='img {{tu}}' bindtap='selected' id='tu'>
+            <image src='https://suncloud.club/tu.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--龙  -->
+          <view class='img {{long}}' bindtap='selected' id='long'>
+            <image src='https://suncloud.club/long.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--蛇  -->
+          <view class='img {{she}}' bindtap='selected' id='she'>
+            <image src='https://suncloud.club/she.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--马  -->
+          <view class='img {{ma}}' bindtap='selected' id='ma'>
+            <image src='https://suncloud.club/ma.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--羊  -->
+          <view class='img {{yang}}' bindtap='selected' id='yang'>
+            <image src='https://suncloud.club/yang.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--猴  -->
+          <view class='img {{hou}}' bindtap='selected' id='hou'>
+            <image src='https://suncloud.club/hou.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--鸡  -->
+          <view class='img {{ji}}' bindtap='selected' id='ji'>
+            <image src='https://suncloud.club/ji.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--狗  -->
+          <view class='img {{gou}}' bindtap='selected' id='gou'>
+            <image src='https://suncloud.club/gou.png' style='width:68px;height:68px;'/>
+          </view>
+          <!--猪  -->
+          <view class='img {{zhu}}' bindtap='selected' id='zhu'>
+            <image src='https://suncloud.club/zhu.png' style='width:68px;height:68px;'/>
+          </view>
+        </view>
+
+  </view>
+
+
+
+</view>

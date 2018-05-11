@@ -1,10 +1,12 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
+ .container {
+   width: 100%;
+   font-family: myFont, arial, misrosoftYahei;
+  /* height: 100%; */
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+  box-sizing: border-box; */
+}  
