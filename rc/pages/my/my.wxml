@@ -1,0 +1,50 @@
+<!--我的页面  -->
+<view class='container'>
+  <!--第一部分 用户模块  -->
+  <view class='user-info-container'>
+    <view class='user-info-myBg' bindtap='changeTheBackground'>
+      <image src="{{myBg}}" mode="scaleToFill" />
+    </view>
+    <view class='user-info-portrait'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class="user-info-wrap">
+        <text class="user-info-username">你好！{{userInfo.nickName}}</text>
+    </view>
+  </view>
+
+  <!--功能模块  -->
+  <view class='function-container'>
+    <!--个人信息  -->
+    <view class='user-post'>
+      <view class='user-post-icon'></view>
+      <view class="user-post-text-wrap">
+          <text class="user-text">个人信息</text>
+      </view>
+      <view class="user-arrow-wrap">
+              <view class="user-info-arrow"/>
+      </view>
+    </view>
+    <!--币币提现  -->
+    <view class='user-follow'>
+      <view class='user-follow-icon'></view>
+      <view class="user-follow-text-wrap">
+          <text class="user-text">币币提现</text>
+      </view>
+      <view class="user-arrow-wrap">
+              <view class="user-info-arrow"/>
+      </view>
+    </view>
+    <!-- 开通会员  -->
+    <view class='user-vip' bindtap='VIP'>
+      <view class='user-vip-icon'></view>
+      <view class="user-vip-text-wrap">
+          <text class="user-text">开通会员</text>
+      </view>
+      <view class="user-arrow-wrap">
+           <view class="user-info-arrow"/>
+      </view>
+    </view>
+  </view>
+</view>
+
