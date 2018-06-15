@@ -1,5 +1,7 @@
 package sun.cloud.api.query;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import java.io.Serializable;
 
 /**
@@ -18,6 +20,7 @@ public class UserInfo implements Serializable{
     /**
      * 用户昵称
      */
+    @NotBlank(message = "{nickName}")
     private String nickName;
 
     /**

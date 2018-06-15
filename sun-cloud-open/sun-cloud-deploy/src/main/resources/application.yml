@@ -65,6 +65,9 @@ spring:
     database: 0
     ##Redis服务器连接密码（默认为空）
     password:
+  messages:
+    encoding: UTF-8
+    basename: i18n/messages
 #########全局配置项############
 system:
   ###### 当异常出现时，使用json返回
@@ -99,5 +102,6 @@ system:
 #微信接口
 weixin:
   #通过code获取用户的openid
-  openid: ####
-  secret: ####
+  openid: ^&^(*&^*(&(*&(*
+  secret: &*&89070730920958092850929805
+

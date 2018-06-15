@@ -35,7 +35,7 @@ public class GlobalExceptionHandler {
     @Autowired
     private ExceptionProperties exceptionProperties;
 
-    private boolean ajax = Boolean.FALSE;
+    private boolean ajax = Boolean.TRUE;
 
     public static final String DEFAULT_ERROR_VIEW = "500";
 
